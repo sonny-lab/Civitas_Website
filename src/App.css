@@ -1,0 +1,328 @@
+/* General Styles */
+body {
+  font-family: 'Georgia', serif; /* A classic, elegant font */
+  margin: 0;
+  padding: 0;
+  background-color: #f0e6d6; /* Light parchment color */
+  color: #3e2723; /* Dark brown for text */
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff8e1; /* Lighter parchment for content areas */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Header */
+.main-header {
+  background-color: #5d4037; /* Darker brown for header */
+  color: #f0e6d6;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-logo {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; /* A more regal font for the logo */
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffd700; /* Gold color for the logo */
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for a carved look */
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 25px;
+}
+
+.main-nav a {
+  color: #f0e6d6;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #ffd700; /* Gold on hover */
+}
+
+.menu-toggle {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  color: #f0e6d6;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/castle-bg.jpg") no-repeat center center/cover; /* Castle background */
+  color: #f0e6d6;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.hero-section h1 {
+  font-family: 'Cinzel Decorative', cursive; /* A decorative, medieval-style font */
+  font-size: 4em;
+  margin-bottom: 10px;
+  color: #ffd700;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-section p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+.button {
+  display: inline-block;
+  background-color: #a0522d; /* Sienna brown */
+  color: #f0e6d6;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+  border: 2px solid #a0522d;
+}
+
+.button:hover {
+  background-color: #8b4513; /* Saddle brown */
+  border-color: #8b4513;
+}
+
+.button.secondary {
+  background-color: transparent;
+  border-color: #f0e6d6;
+  color: #f0e6d6;
+}
+
+.button.secondary:hover {
+  background-color: #f0e6d6;
+  color: #5d4037;
+}
+
+/* Sections */
+.about-section, .features-section, .cta-section {
+  padding: 40px 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #d4c4b4; /* Subtle separator */
+}
+
+.about-section h2, .features-section h2, .cta-section h2, .page-content h1 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #5d4037;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.features-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.features-section li {
+  background-color: #d4c4b4; /* Lighter brown for list items */
+  padding: 15px 25px;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: #5d4037;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cta-section {
+  text-align: center;
+  border-bottom: none;
+}
+
+/* Blog & Development Pages */
+.post-list, .update-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.post-card, .update-card {
+  background-color: #fdf5e6; /* Even lighter parchment for cards */
+  border: 1px solid #d4c4b4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover, .update-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card h2 a, .update-card h2 a {
+  color: #5d4037;
+  text-decoration: none;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.post-card h2 a:hover, .update-card h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-meta, .update-meta {
+  font-size: 0.9em;
+  color: #8d6e63; /* Muted brown for metadata */
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #a0522d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Individual Post/Update Pages */
+.blog-post, .dev-update {
+  padding: 40px;
+}
+
+.blog-post h1, .dev-update h1 {
+  font-size: 3em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.blog-post p, .dev-update p, .blog-post ul, .dev-update ul {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.blog-post h2, .dev-update h2 {
+  font-size: 2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  color: #5d4037;
+}
+
+.blog-post ul, .dev-update ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  color: #a0522d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.main-footer {
+  background-color: #5d4037;
+  color: #f0e6d6;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Pushes footer to the bottom */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #5d4037;
+    position: absolute;
+    top: 70px; /* Adjust based on header height */
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+
+  .main-nav.open {
+    display: flex;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .main-nav li {
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block; /* Show on mobile */
+  }
+
+  .hero-section h1 {
+    font-size: 3em;
+  }
+
+  .hero-section p {
+    font-size: 1.2em;
+  }
+
+  .about-section h2, .features-section h2, .cta-section h2, .page-content h1 {
+    font-size: 2em;
+  }
+
+  .post-list, .update-list {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-post h1, .dev-update h1 {
+    font-size: 2.5em;
+  }
+}
